@@ -26,8 +26,8 @@ public class Calculator {
         );
     }
 
-    public static double sum(int x, int y){
-        double a = x + y;
+    public static int sum(int x, int y){
+        int a = x + y;
         return a;
     }
 
@@ -36,13 +36,13 @@ public class Calculator {
         return a;
     }
 
-    public static double sum(long x, long y){
-        double a = x + y;
+    public static long sum(long x, long y){
+        long a = x + y;
         return a;
     }
 
-    public static double subst(int x, int y){
-        double a = x - y;
+    public static int subst(int x, int y){
+        int a = x - y;
         return a;
     }
 
@@ -51,13 +51,13 @@ public class Calculator {
         return a;
     }
 
-    public static double subst(long x, long y){
-        double a = x - y;
+    public static long subst(long x, long y){
+        long a = x - y;
         return a;
     }
 
-    public static double mult(int x, int y){
-        double a = x * y;
+    public static int mult(int x, int y){
+        int a = x * y;
         return a;
     }
 
@@ -66,8 +66,8 @@ public class Calculator {
         return a;
     }
 
-    public static double mult(long x, long y){
-        double a = x * y;
+    public static long mult(long x, long y){
+        long a = x * y;
         return a;
     }
 
