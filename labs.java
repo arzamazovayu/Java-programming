@@ -4,20 +4,20 @@ public class labs {
     public static void main(String[] args){
 
         System.out.println("Первое задание:");
-        FirstTask();
+        firstTask();
         System.out.println("Второе задание:");
-        SecondTask();
+        secondTask();
         System.out.println("Третьяе задание:");
-        ThirdTask();
+        thirdTask();
         System.out.println("Четвёртое задание:");
-        FourthTask();
+        fourthTask();
         System.out.println("Пятое задание:");
-        FifthTask();
+        fifthTask();
         System.out.println("Шестое задание:");
-        SixthTask();
+        sixthTask();
     }
 
-    public static void FirstTask () {
+    public static void firstTask () {
         String str1 = "Я";
         String str2 = "хорошо";
         String str3 = "знаю";
@@ -29,7 +29,7 @@ public class labs {
         System.out.println(str4);
     }
 
-    public static void SecondTask () {
+    public static void secondTask () {
 
         double y1 = 10;
         double y2 = 3;
@@ -40,15 +40,15 @@ public class labs {
         System.out.println(x2);
     }
 
-    public static void ThirdTask () {
+    public static void thirdTask () {
 
         int number = 10500;
-        int result = (number/10)/10;
+        double result = ((double)number/(double)10)/(double)10;
 
         System.out.println(result);
     }
 
-    public static void FourthTask () {
+    public static void fourthTask () {
 
         double val1 = 3.6;
         double val2 = 4.1;
@@ -58,7 +58,7 @@ public class labs {
         System.out.println(result);
     }
 
-    public static void FifthTask () {
+    public static void fifthTask () {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -69,7 +69,7 @@ public class labs {
         System.out.printf("%d \n%d \n%d", in1, in2, in3);
     }
 
-    public static void SixthTask () {
+    public static void sixthTask () {
 
         System.out.print("Введите целое число b:");
         Scanner scanner = new Scanner(System.in);
