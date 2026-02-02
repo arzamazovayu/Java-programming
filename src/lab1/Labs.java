@@ -1,5 +1,9 @@
+package lab1;
+
+import java.util.Scanner;
+
 // initial comment for saving a new file
-public class labs {
+public class Labs {
 
     public static void main(String[] args){
 
@@ -43,7 +47,7 @@ public class labs {
     public static void thirdTask () {
 
         int number = 10500;
-        double result = ((double)number/(double)10)/(double)10;
+        double result = ((double)number/10)/10;
 
         System.out.println(result);
     }
