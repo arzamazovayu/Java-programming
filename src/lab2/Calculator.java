@@ -72,17 +72,17 @@ public class Calculator {
     }
 
     public static double divide(int x, int y){
-        double a = x * y;
+        double a = x / y;
         return a;
     }
 
     public static double divide(double x, double y){
-        double a = x * y;
+        double a = x / y;
         return a;
     }
 
     public static double divide(long x, long y){
-        double a = x * y;
+        double a = x / y;
         return a;
     }
 }

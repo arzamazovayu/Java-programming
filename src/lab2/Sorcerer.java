@@ -10,7 +10,7 @@ public class Sorcerer {
         race = "Human";
         hitPoints = 40;
         mana = 20;
-        element = "fire";
+        element = "water";
     }
 
     public Sorcerer(String race, int hp, int mana, String element){
