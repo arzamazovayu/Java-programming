@@ -6,12 +6,14 @@ public class Lab5 {
                 "The longest word here is Mythbusters! И вообще, какая бяка эта ваша заливная рыба. Бяка, правда.";
         System.out.println("Результаты первого задания: " + findLongestWord(text));
 
-        String pal1 = "дом мод";
+        String pal1 = "Дом мод";
         String pal2 = "слово";
         System.out.println("Результаты второго задания:\n a - " + palindromeCheck(pal1)
                 + "\n b - " + palindromeCheck(pal2));
 
-        System.out.println("Результаты третьего задания:\n" + replaceByaka(text));
+        String bad = "бяка";
+        String censor = "[вырезано цензурой]";
+        System.out.println("Результаты третьего задания:\n" + replaceByaka(text, bad, censor));
 
         System.out.println("Результаты четвёртого задания:\n" + substringCount(text, "the longest"));
 
@@ -33,6 +35,7 @@ public class Lab5 {
     }
 
     public static boolean palindromeCheck(String palindrome) {
+        palindrome = palindrome.toLowerCase();
         char[] word = palindrome.toCharArray();
         StringBuilder word2 = new StringBuilder();
         for(int i = (word.length-1); i >= 0; i-- ) {
@@ -42,13 +45,13 @@ public class Lab5 {
         return palindrome.equals(result);
     }
 
-    public static String replaceByaka (String text){
+    public static String replaceByaka (String text, String bad, String censor){
         String[] words = text.split("\\b");
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < words.length; i++) {
             String word = words[i];
-            if(word.equalsIgnoreCase("бяка")){
-                words[i] = "[вырезано цензурой]";
+            if(word.equalsIgnoreCase(bad)){
+                words[i] = censor;
             }
         }
         for (String word : words){
