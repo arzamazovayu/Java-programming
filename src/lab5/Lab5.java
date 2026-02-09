@@ -1,7 +1,5 @@
 package lab5;
 
-import java.util.regex.Pattern;
-
 public class Lab5 {
     public static void main(String[] args) {
         String text = "This is template text for finding the longest word in it. " +
